@@ -32,7 +32,16 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-        # other events fall here
+        # other events - keystrokes fall here
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                player.wants_left()
+            elif event.key == pygame.K_RIGHT:
+                player.wants_right()
+            elif event.key == pygame.K_DOWN:
+                player.wants_down()
+            elif event.key == pygame.K_UP:
+                player.wants_up()
 
     player.update_pacman()
     pygame.display.update()

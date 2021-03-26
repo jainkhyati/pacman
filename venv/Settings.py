@@ -14,6 +14,8 @@ STARTPOS_Y = 400
 WIDTH = 448
 HEIGHT = 560
 
+#velocities
+VELOCITY = 0.06
 #grid for clarity during coding - to be deleted later
 
 
